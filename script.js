@@ -2,11 +2,15 @@ function computerPlay() {
     let computerResult = Math.floor((Math.random() * 3)+ 1);
     console.log(computerResult);
 
-    if (computerResult = 1) {
+    if (computerResult === 1) {
         computerResult = "Rock";
-    } else if (computerResult = 3) {
+    };
+    
+    if (computerResult === 2) {
         computerResult = "Paper";
-    } else {
+    };
+    
+    if (computerResult === 3) {
         computerResult = "Scissors";
     };
     console.log(computerResult);
