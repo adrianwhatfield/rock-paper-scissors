@@ -4,6 +4,7 @@ let computerScore = 0;
 
 const arrayLength = 5;
 
+// Create array that stores the computer's choise for all five rounds
 var computerResultsArray = [];
 
 for (var i = 0; i < arrayLength; i++) {
@@ -37,6 +38,7 @@ function computerPlay() {
     return computerResult;
 };
 
+// Plays a single round, changes the score, and shows who won
 function playRound(playerSelection, computerSelection) {
     playerSelection.toLowerCase();
     //console.log(playerSelection);
@@ -79,12 +81,13 @@ function playRound(playerSelection, computerSelection) {
 
 //console.log(playRound(playerSelection, computerSelection));
 
+// Plays five rounds of the game and shows the overall winner
 function game() {
     for (let i = 0; i < 5; i++) {
         playerSelection = prompt("Rock, paper, or scissors?");
         computerSelection = computerResultsArray[0];
         playRound(playerSelection, computerSelection);
-        computerResultsArray.shift();
+        computerResultsArray.shift(); //removes the first value so the choice changed between rounds
     }
 
     if (computerScore > playerScore) {
