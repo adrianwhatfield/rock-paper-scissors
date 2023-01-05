@@ -3,10 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title>Rock, Paper, Scissors</title>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <h1>Rock, Paper, Scissors</h1>
+        <p id="gameState">Five points to win.</p>
+
+        <div class="btn-container">
+            <button id="scissorsButton" class="scissors button"><img src="imgs/scissor.png" alt="scissors icon"></button>
+            <button id="rockButton" class="rock button"><img src="imgs/rock.png" alt="rock icon"></button>
+            <button id="paperButton" class="paper button"><img src="imgs/document.png" alt="paper icon"></button>
+        </div>
+
+        <div class="score-container">
+            <div class="comp">
+                <h3>Computer</h3>
+                <p class="score" id="compScore">0</p>
+            </div>
+                
+            <div class="player">
+                <h3>Player</h3>
+                <p class="score" id="playerScore">0</p>
+            </div>
+        </div>
+        
+
+        <footer>
+            <a href="https://www.flaticon.com/free-icons/blank" title="blank icons">Blank icons created by Made by Made - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/scissors" title="scissors icons">Scissors icons created by BomSymbols - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/rock" title="rock icons">Rock icons created by Nadiinko - Flaticon</a>
+        </footer>
     </body>
 </html>
