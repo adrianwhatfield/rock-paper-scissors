@@ -11,7 +11,7 @@ function getComputerChoice() {
 }
 
 let score = 0;
-let playerChoice = prompt("Rock, paper, scissors?");
+let playerChoice;
 //const computerSelection = getComputerChoice();
 
 function playRound(playerSelection, computerSelection) {
@@ -67,21 +67,3 @@ function playRound(playerSelection, computerSelection) {
         return "You tie!";
     }
 }
-
-function game() {
-    for (let i = 0; i < 5; i++) {
-        console.log(playRound());
-        playerChoice = prompt("Rock, paper, scissors?");
-    };
-    if (score >= 3) {
-        return "YOU WON!"
-    } else {
-        return "YOU LOST!"
-    }
-}
-
-
-//console.log("Computer's choice: " + getComputerChoice());
-//console.log("Player's choice: " + playerChoice);
-//console.log(playRound());
-console.log(game());
